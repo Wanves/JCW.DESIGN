@@ -1,0 +1,374 @@
+:root{
+  --color1:#e7d3cc;
+  --color2:#895575;
+  --color3:#342d50;
+  --color4:#1e0233;
+  --fondo:#f95950;
+  --titulos:2.5em;
+  --margenes:60px;
+  --espacios:10px;
+  --espacios-contenido:45px;
+}
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   background-image: linear-gradient(#e7d3cc,#895575); 
+   /* background:var(--color2); */
+}
+
+img{
+  vertical-align: top;
+}
+
+/* preloader */
+/* .hidden{
+  overflow: hidden;
+} */
+
+/* .centrado{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+ .lds-facebook {
+   display: inline-block;
+   position: relative;
+   width: 80px;
+   height: 80px;
+ }
+ .lds-facebook div {
+   display: inline-block;
+   position: absolute;
+   left: 8px;
+   width: 16px;
+   background: #895575;
+   animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+ }
+ .lds-facebook div:nth-child(1) {
+   left: 8px;
+   animation-delay: -0.24s;
+ }
+ .lds-facebook div:nth-child(2) {
+   left: 32px;
+   animation-delay: -0.12s;
+ }
+ .lds-facebook div:nth-child(3) {
+   left: 56px;
+   animation-delay: 0;
+ }
+ @keyframes lds-facebook {
+   0% {
+     top: 8px;
+     height: 64px;
+   }
+   50%, 100% {
+     top: 24px;
+     height: 32px;
+   }
+ }
+
+ /* Header */
+
+ header{
+  width:100%;
+  height: 600px;
+  background: linear-gradient(to bottom,
+  #9754cbd0,
+   #895575d1,
+   #342d50d2,
+   #1e0233d1),
+   url(/img/a13.jpg);
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+ }
+
+ nav{
+  width:100%;
+  position:fixed;
+  box-shadow:0 .5px 10px #1e0233;
+ }
+ .nav1{
+  background: transparent;
+  height:80px;
+  color:#e7d3cc;
+ }
+
+ .nav2{
+  background: linear-gradient(#e7d3cc,#895575);
+  background: var(--fondo);
+  height:100px;
+  color:#895575;
+ }
+
+ .contenedor-nav{
+  display: flex;
+  margin:auto;
+  width:90%;
+  justify-content:space-between ;
+  align-items: center;
+  max-width:1000px;
+  height:inherit;
+  overflow: hidden;
+ }
+ nav .enlaces a{
+  display: inline-block;
+  padding: 5px 0;
+  margin: 17px;
+  font-size:17px;
+  font-weight:300;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  color:inherit;
+ }
+
+ nav .enlaces a:hover{
+  border-bottom: 3px solid #1498a4;
+  transition: 0.6s;
+ }
+
+ .logo, .logo img{
+  height:80px;
+ }
+
+ .icono{
+  display: none;
+  font-size: 24px;
+  padding: 23.5px 20px;
+ }
+
+ .textos{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items: center;
+  color: #e7d3cc;
+  overflow: hidden;
+  text-align: center;
+  text-shadow:5px 5px 5px #342d50;
+ }
+
+ .textos > h1{
+  font-size: 5.5em;
+ }
+
+ .textos > h2{
+  font-size:2.5em;
+  font-weight: 300;
+ }
+
+ .textos > h3{
+  font-size:1.2em;
+  font-weight: 300;
+ }
+
+ /* main */
+
+ .contenedor{
+  margin: auto;
+  padding: var(--margenes) 0;
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+  overflow: hidden;
+  text-shadow: 2px 2px 5px #342d50;
+ }
+
+ .contenedor h3{
+  font-size: var(--titulos);
+  color: #342d50;
+  margin-bottom: var(--espacios);
+  font-weight: 300;
+ }
+
+ .contenedor h4,
+   p{
+  font-size: var(--subtitulos);
+  font-weight: 300;
+  color: #342d50;
+ }
+
+ .after::after{
+  content: '';
+  display: block;
+  margin: auto;
+  margin-top: var(--espacios);
+  width: 7em;
+  height: .1em;
+  background-color: var(--color2);
+  margin-bottom: var(--espacios-contenido);
+ }
+
+ .card{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+
+}
+
+ .content-card{
+  width: 31%;
+  box-shadow: 0 0 6px 0 #342d50;
+  overflow: hidden;
+  height: 400px;
+ }
+
+ .people{
+  height: 80%;
+}
+
+.content-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texto-team{
+  height: 20%;
+  width: 100%;
+  padding: var(--espacios) 0;
+  text-align: center;
+}
+
+.about{
+  background: linear-gradient(to bottom,
+  #9754cbd0,
+   #895575d1,
+   #342d50,
+   #1e0233d1),
+   url(/img/wallpaperbetter.com_7680x4320.jpg); 
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+  height: auto;
+}
+.neo {
+  color: #e7d3cc ;
+}
+
+.servicios{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.caja-servicios>h4{
+  margin-bottom: var(--espacios);
+}
+.botones-work{
+  overflow: hidden;
+}
+
+.botones-work li{
+  display: inline-block;
+  margin-left:var(--espacios) ;
+  margin-bottom: var(--espacios-contenido);
+  padding: 6px 12px ;
+  border: 1px solid var(--color3) ;
+  border-radius: .2em ;
+  list-style: none;
+  color: #342d50;
+}
+
+.botones-work li:hover{
+  background:var(--color2);
+  color: var(--color1);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.botones-work .active{
+  background:var(--color2);
+  color: var(--color1);
+}
+
+.galeria-work{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+
+.galeria-work   .cont-work{
+  width:31%;
+  box-shadow: 0 0 6px 0 #342d50;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: var(--espacios-contenido);
+}
+
+.img-work{
+  height: 90%;
+  width: 100%;
+}
+
+.img-work img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.textos-work{
+ height: 10px;
+}
+
+.textos-work{
+  line-height: 30px;
+  font-weight: 300;
+}
+
+/* footer */
+footer {
+  background: linear-gradient(to bottom,
+  #9754cbd0,
+   #895575d1,
+   #342d50,
+   #1e0233d1),
+   url(/img/footer1.jpg); 
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+  height: auto;
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+
+.marca-logo{
+  width: 40%;
+  margin: auto;
+  margin-bottom: var(--espacios);
+}
+
+.marca-logo img{
+ width: 100%;
+}
+
+.iconos{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 1em;
+}
+
+.fa-brands{
+  font-size:60px;
+  color:var(--color4);
+}
+
+footer p{
+  margin-top: var(--espacios);
+}
